@@ -36,7 +36,6 @@ env:
   ECS_SERVICE: t2-demo        
   ECS_CLUSTER: t2-demo
   ECS_TASK_DEFINITION: .aws/task-definition.json
-
   CONTAINER_NAME: NextJS
 
 
