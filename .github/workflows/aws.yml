@@ -86,7 +86,7 @@ jobs:
           image: ${{ steps.build-image.outputs.image }}
           environment-variables: |
             DATABASE_URL= ${{ secrets.DATABASE_URL }}
-            NEXT_PUBLIC_WHAT = ${{ secrets.NEXT_PUBLIC_WHAT }}
+            NEXT_PUBLIC_WHAT= ${{ secrets.NEXT_PUBLIC_WHAT }}
 
       - name: Deploy Amazon ECS task definition
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
